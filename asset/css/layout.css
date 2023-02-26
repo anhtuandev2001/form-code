@@ -7,7 +7,7 @@
   /* width container */
   --widthContainer: 1200px;
   /* gap col */
-  --gap: 24px;
+  --gap: 0;
   /* gap container */
   --gap-container:20px;
 }
@@ -107,6 +107,10 @@ max-width: calc(100%/12 * 12);
 
 /* tablet */
 @media (min-width: 768px) {
+  :root{
+    --gap: px;
+  }
+
   .m-1 {
       flex: 0 0 calc(100%/12 * 1);
   max-width: calc(100%/12 * 1);
@@ -170,6 +174,10 @@ max-width: calc(100%/12 * 12);
 
 /* laptop */
 @media (min-width: 1024px) {
+  :root{
+    --gap: px;
+  }
+  
   .l-1 {
     flex: 0 0 calc(100%/12 * 1);
     max-width: calc(100%/12 * 1);
